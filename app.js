@@ -76,7 +76,7 @@ function handleCM (event) {
 }
 
 function handleSaveClick(){
-    const image = canvas.toDataURL();
+    const image = canvas.toDataURL(); //==> ("image/jpeg")로 속성변경가능
     const link = document.createElement("a");
     link.href = image;
     link.download = "PaintJS(🃏)";
